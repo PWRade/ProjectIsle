@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project Isle - Alpha 0.1</title>
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="game-window">
+            <h2>{{ currentLocation.name }}</h2>
+            <p>{{ currentLocation.desc }}</p>
+            <p>{{ currentLocation.look }}</p>
+            <input v-on:keydown.enter="performAction()" v-model="userInput"/>
+        </div>
+        <div class="info-window">
+
+        </div>
+        <script src="PI-game.js"></script>
+        <script src="PI-function.js"></script>
+    </body>
+    <footer>
+
+    </footer>
+</html>
